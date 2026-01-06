@@ -57,17 +57,17 @@ Copy code
 git clone https://github.com/<YOUR_GITHUB_USERNAME>/xero-trial-balance-extractor.git
 cd xero-trial-balance-extractor
 ```
-Step 3 — Create and activate a virtual environment
+## Step 3 — Create and activate a virtual environment
 ```powershell
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
-Step 4 — Install dependencies
+## Step 4 — Install dependencies
 ```powershell
 
 pip install -r requirements.txt
 ```
-Step 5 — Configure environment variables
+## Step 5 — Configure environment variables
 ```powershell
 
 copy .env.example .env
@@ -84,7 +84,7 @@ XERO_SCOPES=accounting.reports.read offline_access
 ```
 ⚠️ Never commit .env, token files, or output files.
 
-Step 6 — Run the extractor
+## Step 6 — Run the extractor
 ```powershell
 Copy code
 python .\xero_trial_balance.py
@@ -100,7 +100,7 @@ python .\xero_trial_balance.py
 - Tokens refresh automatically
 - No login required
 
-Step 7 — Change the extraction date
+## Step 7 — Change the extraction date
 Edit this line in xero_trial_balance.py:
 
 ```python
@@ -116,7 +116,7 @@ False → Accrual basis (recommended)
 
 True → Cash basis
 
-Troubleshooting
+## Troubleshooting
 Redirect URI error
 Ensure Redirect URI matches exactly:
 
@@ -136,7 +136,7 @@ API endpoint used
 ```sql
 GET /Reports/TrialBalance
 ```
-##Official Xero resources
+## Official Xero resources
 
 Xero Trial Balance API
 https://developer.xero.com/documentation/api/accounting/reports#get-reports-trialbalance
@@ -157,7 +157,7 @@ Accurate for audits and reporting
 
 No manual aggregation needed
 
-Owner
+## Owner
 Runbook owner: Ibram Ghali
 
 
