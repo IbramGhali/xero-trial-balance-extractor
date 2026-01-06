@@ -89,21 +89,16 @@ Step 6 — Run the extractor
 Copy code
 python .\xero_trial_balance.py
 ```
-First run
-Browser opens to Xero login
+### First run
+- Browser opens to Xero login
+- Approve access
+- Script creates:
+  - `token_store.json`
+  - `tenant.json`
 
-Approve access
-
-Script creates:
-
-token_store.json
-
-tenant.json
-
-Next runs
-Tokens refresh automatically
-
-No login required
+### Next runs
+- Tokens refresh automatically
+- No login required
 
 Step 7 — Change the extraction date
 Edit this line in xero_trial_balance.py:
@@ -114,7 +109,7 @@ as_of = date(2025, 12, 31)
 ```
 Accounting basis
 ```python
-Copy code
+
 payments_only = False
 ```
 False → Accrual basis (recommended)
@@ -139,10 +134,10 @@ Then run the script again.
 
 API endpoint used
 ```sql
-Copy code
 GET /Reports/TrialBalance
 ```
-Official Xero resources
+##Official Xero resources
+
 Xero Trial Balance API
 https://developer.xero.com/documentation/api/accounting/reports#get-reports-trialbalance
 
