@@ -1,4 +1,4 @@
-Copy code
+
 # Xero Trial Balance (GL Account Balances) Extractor – Runbook
 
 ## Purpose
